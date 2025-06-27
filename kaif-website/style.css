@@ -1,0 +1,192 @@
+.navbar ul{
+        display: flex;
+        justify-content:space-evenly;
+        list-style: none;
+        font-size: 30px;
+        background-color: rgb(160, 215, 238);
+}
+
+
+.img-k{
+        border-radius: 20px;
+        width: 300px;
+}
+.hero-section{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+}       
+.hero-section .self_bio{    
+padding: 50px;
+}
+.self_bio h1{
+        font-size: 50px;
+}
+
+
+
+.qualification{
+        display: flex;
+        justify-content:center;
+        background-color:#a4e2f5;;
+}
+.education{
+        display: flex;
+        justify-content: space-between;
+        
+}
+.edu{
+border: solid black;
+border-radius: 20px;
+padding-left: 10px;
+padding-right: 10px;
+background-color: rgb(184, 208, 243);
+margin: 20px;
+
+
+}
+.pro-skills{
+        display:flex;
+        justify-content:center;
+        font-size: 40px;
+        background-color: rgb(197, 233, 243);
+        margin: 20px;
+}
+.p-skills h4{
+        border: solid black;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #c2cef5;
+}
+.skills{
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px;
+        
+}
+.p-div h4{
+        display:flex;
+        justify-content: space-around;
+        font-size: 40px;
+        margin: 20px;
+        background-color: rgb(199, 236, 236);
+}
+.p-divv{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+}
+.pro-per{
+        font-size: 30px;
+        display: flex;
+        justify-content:center;
+        background-color: rgb(145, 201, 234);
+}
+.pro-name{
+        align-items: center;
+        font-size: 20px;
+        width: 60%;
+        background-color: #d9f3f5;
+        border-radius: 50px;
+        margin: 20px;
+        padding: 30px;
+}
+.info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(71, 65, 234);
+}
+.div-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(218, 248, 238);
+        
+}
+li{
+        list-style: none;
+}
+.div-foot{
+        padding-left: 0;
+          font-size: 20px;    
+          color: rgb(87, 59, 248);  
+}
+/* Base Styles - already defined above (use flex, % widths, etc.) */
+
+/* ---------- Media Queries ---------- */
+
+/* Tablets (max width 1024px) */
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .education, .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pro-name {
+        width: 80%;
+    }
+}
+
+/* Mobile Devices (max width 768px) */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .self_bio h1, .self_bio h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .img-k {
+        width: 90%;
+        height: auto;
+    }
+
+    .edu, .p-skills {
+        width: 90%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .skills {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .div-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .div-foot {
+        font-size: 18px;
+    }
+
+    .pro-name h1 {
+        font-size: 18px;
+    }
+
+    .pro-per {
+        font-size: 24px;
+        padding: 10px;
+        text-align: center;
+    }
+}
